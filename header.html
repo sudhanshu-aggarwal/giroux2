@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="nav-main">
+        <ul id="nav-menu">
+            <img src="./images/giroux-new-logo.png" width="182" height="182" alt="">
+            <button id="nav-btn">☰</button>
+            <div id="site_logo_mobile">Giroux</div>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="dropdown-btn"><a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Residential<br>Services</a>
+                    <a href="#">Commercial<br>Services</a>
+                </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="Giroux_EVT.html">Edison Vs Tesla</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav-btn").click(function () {
+                if ($("#nav-btn").text() == "☰") {
+                    $("#nav-btn").text("X");
+                } else {
+                    $("#nav-btn").text("☰");
+                }
+
+                $("#nav-menu li").slideToggle();
+                $("#site_logo_mobile").slideToggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
