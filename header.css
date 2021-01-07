@@ -21,7 +21,7 @@
 header {
     position: fixed;
     z-index: 1;
-    height: 180px;
+    height: 120px;
     transition: 0.4s;
     width: 100%;
 }
@@ -32,17 +32,17 @@ header {
     width: 100%;
 }
 
-#nav-main ul {
+#nav-menu {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-#nav-menu {
     color: #333333;
     font-weight: 600;
     font-size: 20px;
     font-family: Varela Round, Helvetica, sans-serif;
+    width: 100%;
+    align-self: center;
+    height: 170px;
 }
 
 #nav-menu a {
@@ -50,7 +50,8 @@ header {
     color: #333333;
     display: flex;
     align-self: center;
-    padding: 1vh 1vh;
+    /* padding: 1vh 1vh; */
+    color: rgba(0, 0, 0, 0.6);
 }
 
 #nav-menu li {
@@ -60,8 +61,12 @@ header {
     font-size: 3vh;
 }
 
-#nav-menu img {
-    margin: 10px 20px;
+#nav-menu a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#site_logo {
+    margin: 1px 9vw;
 }
 
 #nav-menu button,#site_logo_mobile{
@@ -105,10 +110,29 @@ header {
 }
 
 main {
-    padding-top: 180px;
+    padding-top: 150px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .dropdown-content{
+        display: inline;
+        position: relative;
+        background-color: #f1f1f1;
+        box-shadow: unset;
+        width: 90%;
+        float: right;
+    }
+
+    .dropdown-content li {
+        position: relative;
+        display: inline;
+    }
+
+    #dropdown-btn:hover .dropdown-content {
+        display: unset;
+    }
+    
+
     #nav-main {
         flex-direction: column;
     }
@@ -116,18 +140,33 @@ main {
         flex-direction: column;
         text-align: center;
     }
+    #nav-menu{
+        height: unset;
+        padding: 0 40px;
+        
+    }
     #nav-menu li {
+        align-items: flex-start;
         display: none;
         margin: 0;
+        width: 100%;
     }
-    #nav-menu img {
+    #site_logo{
         margin: 0px 0px;
         align-self: center;
         display: none;
     }
     #nav-menu a {
         display: block;
+        padding: 3% 0;
+        width: 100%;
+        text-align: left;
+        border-bottom: rgb(128, 128, 128, .1) 1px solid;
+        font-size: 14px;
+        font-weight: 600;
     }
+
+
     #nav-menu a:hover {
         background-color: cadetblue;
     }
@@ -138,16 +177,16 @@ main {
         border: none;
         outline: none;
         cursor: pointer;
-        align-self: flex-start;
+        align-self: flex-end;
         padding: 20px 20px;
     }
 
-    #nav-menu #site_logo_mobile{
+    #site_logo_mobile{
         position: absolute;
         display: inline;
         margin: auto;
         top: 50%;
-        left: 50%;
+        left: 20%;
         transform: translate(-50%, -50%);
     }
 
@@ -156,6 +195,6 @@ main {
         height: unset;
     }
     main {
-        padding-top: unset;
+        padding-top: 9vh;
     }
 }

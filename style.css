@@ -27,10 +27,10 @@ main{
 }
 
 .featured-image-overlay{
-    background-color: #262a62;
+    background-color: rgba(0,29,105,0.7);
     height: 500px;
     transform: skew(-15deg);
-    filter: opacity(80%);
+    filter: opacity(100%);
     margin-right: 57%;
     margin-left: -100%;
 }
@@ -66,7 +66,7 @@ main{
     width: 60%;
 }
 #features-block-container > div{
-    border: solid blue 1px;
+    border: solid rgba(0,29,105,0.7) 1px;
     position: relative;
     display: flex;
     background-size: 100% 100%;
@@ -137,6 +137,15 @@ main{
 #section-4-blocks>div{
     margin: 0 40px;
     position: relative;
+}
+
+.section-4-blocks_text-container{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
 }
 
 #section-6{
@@ -223,7 +232,6 @@ main{
     }
     
     .featured-image-overlay{
-        background-color: #262a62;
         transform: skew(360deg);
         filter: opacity(80%);
         margin-right: 0%;
@@ -245,8 +253,16 @@ main{
         color: white;
         text-align: center;
         margin: 50% auto;
-        top: 10%;
+        top: 15%;
         transform: translate(0%, 0%);
+    }
+
+    .featured-description div{
+        font-size: 20px !important;
+    }
+
+    #featured-description-d{
+        font-size: 14px !important;
     }
 
     .featured-container img{
@@ -269,7 +285,6 @@ main{
 
     #features-block-container > div{
         align-self: center;
-        border: solid blue 1px;
         margin: 0px;
         margin-bottom: 40px;
         height: fit-content;
@@ -282,6 +297,10 @@ main{
         margin: 20px;
         background-color: #f6f6f6;
         flex-direction: column;
+    }
+
+    #section-3 button{
+        margin-top: 10%;
     }
     #section-3> div{
         align-self: center;
@@ -299,11 +318,22 @@ main{
         height: 100%;
     }
 
-    #section-4-blocks > div{
-        margin: 0;
-        margin-bottom: 40px 
+    #section-4-blocks button{
+        margin-top: 10%;
     }
 
+    .section-4-blocks_text-container{
+        width: 75vw;
+    }
+
+    #section-4-blocks > div{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .button{
+        margin-top: 0px;
+    }
     #section-6{
         width: 100%;
         display: flex;
@@ -314,6 +344,8 @@ main{
     #section-6-heading{
         font-size: x-large !important;
         position: relative;
+        margin: 0px 20px;
+        margin-bottom: -40px;
     }
 
     #section-6-heading + div{
@@ -324,10 +356,12 @@ main{
 
     #section-7{
         font-size: large !important;
-        border: solid;
-        height: fit-content;
+        height: 50vh;
     }
 
+    #section-7-text{
+        margin-bottom: 10%;
+    }
     #section-7 > div{
         display: block;
         position: relative;

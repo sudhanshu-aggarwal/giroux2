@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" href="footer.css">
@@ -30,7 +30,7 @@
             <div class="featured-description">
                 <img src="./images/energy_icon.png" width="100">
                 <div style="font-size: 42px;">Licensed Electricians in <br>Massachusetts</div>
-                <div style="font-size: 26px;">We Don’t Leave You In The Dark!</div>
+                <div id ="featured-description-d" style="font-size: 26px;">We Don’t Leave You In The Dark!</div>
             </div>
 
         </section>
@@ -81,7 +81,7 @@
                 <button class="button" type="button" data-hover="Learn More >"><span>Learn More</span></button>
             </div>
             <div id="section3-background"
-                style="clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 30% 100%, 0% 50%);background-size: 100% 100%; background-image: url(./images/background_section3.jpeg);">
+                style="clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 30% 100%, 0% 50%);background-size: cover; background-image: url(./images/background_section3.jpeg);">
                 <div>
                     <img src="">
                     <div>Valuable Solutions </div>
@@ -100,8 +100,8 @@
                         <img width="100%" style="filter:opacity(50%);height: 350px;"
                             src="./images/block1_section4.jpeg">
                     </div>
-                    <div style="position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);color: #fff;">
-                        <div style="font-family: Varela Round;font-size: 26px;text-align: center;">Residential Services
+                    <div class="section-4-blocks_text-container">
+                        <div style="font-family: Varela Round;font-size: 26px;">Residential Services
                         </div>
                         <div style="font-family: Raleway;font-size: 18px">We can perform same-day service and emergency
                             calls with fully-stocked vehicles, ensuring efficient repairs and installation services for
@@ -116,8 +116,8 @@
                         <img width="100%" style="filter:opacity(50%);height: 350px;"
                             src="./images/block2_section4.jpeg">
                     </div>
-                    <div style="position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);color: #fff;">
-                        <div style="font-family: Varela Round;font-size: 26px;text-align: center;">Commercial Services
+                    <div class="section-4-blocks_text-container">
+                        <div style="font-family: Varela Round;font-size: 26px;">Commercial Services
                         </div>
                         <div style="font-family: Raleway;font-size: 18px">We also have the state of the art equipment to
                             analyze and record your electric for power factor, low/high voltage problems, and a host of
@@ -128,6 +128,23 @@
                 </div>
             </div>
         </section>
+
+        <!-- <section id="section-6-parallax" style="background-image: url('images/background_section6.jpeg') ; z-index: -1; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+            This is Parallax Section
+            <div>
+             <div style="background-image: url('images/background_section6.jpeg') ; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+                 <img style="height: 100%; width: 100%;filter: opacity(50%);" src="./images/background_section6.jpeg">
+            </div>
+            <div
+                style="text-align: center; font-family: Varela Round;color:blanchedalmond;position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);">
+                <div id="section-6-heading" style="font-size: 35px;">Experienced, Friendly, Licensed</div>
+                <div style="font-size: 26px; margin: 50px 10px;">Giroux Electrical Contractors has the expertise you
+                    need for electrical inspections, repairs, new installations and troubleshooting. We can perform
+                    same-day service and emergency calls with fully stocked vehicles, ensuring efficient repairs and
+                    installation services for you, our valued customers.</div>
+            </div>
+        </section> -->
+
         <section id="section-6">
             <div style="background-color: black;height: 500px;">
                 <img style="height: 100%; width: 100%;filter: opacity(50%);" src="./images/background_section6.jpeg">
@@ -144,7 +161,7 @@
         <section id="section-7">
             <div
                 style="text-align: center;color: white;font-size: 30px;font-family: Varela Round;position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%); margin:auto;">
-                <div>Contact us today to see how we can help with your next electrical project!</div>
+                <div id="section-7-text">Contact us today to see how we can help with your next electrical project!</div>
                 <button class="button" type="button" data-hover="Get in touch >"><span>Get in touch</span></button>
             </div>
         </section>
